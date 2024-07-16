@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html>
+<head>
+	<style>
+		.section:has(#about-detail) {
+			background-color: red;
+		}
+		.message.success {
+			color: green;
+		}
+		.message.error {
+			color: red;
+		}
+		.message.warning {
+			color: yellow;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="section">
+		<h2>About</h2>
+		<p id="about-detail">Hello</p>
+	</div>
+	<div class="section">
+		<h2>Contact</h2>
+		<p id="contact-detail"></p>
+	</div>
+
+	<form>
+		<input name="username" placeholder="User name" value="sameer123" />
+		<input name="password" placeholder="Password" />
+		<div class="message error"></div>
+		<button type="button" id="login-btn">Login</button>
+	</form>
+
+	<script src="07.js"></script>
+</body>
+
+</html>
