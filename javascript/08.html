@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html>
+<head>
+	<style>
+		.dropdown {
+			position: relative;
+			background-color: lightgrey;
+			width: fit-content;
+		}
+		.dropdown-menu {
+			position: absolute;
+			display: none;
+			border: 1px solid grey;
+			max-width: 200px;
+			padding: 0.5rem 1rem;
+			border-radius: 0.5rem;
+			background-color: white;
+			z-index: 1;
+		}
+		/*
+		.dropdown:has(button:hover) > .dropdown-menu {
+			display: block;
+		}
+		*/
+		
+		.dropdown.show > .dropdown-menu {
+			display: block;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="dropdown">
+		<button>Menu</button>
+		<div class="dropdown-menu">
+			dropdown content
+		</div>
+	</div>
+	
+	<div>another content</div>
+	
+	<div class="dropdown">
+		<button>Menu</button>
+		<div class="dropdown-menu">
+			dropdown content
+		</div>
+	</div>
+	
+	<div class="calculator">
+		<div class="raw-input">1+2+3</div>
+		<div class="calc">=6</div>
+		<button class="cbtn-7">7</button>
+		<button class="cbtn-8">8</button>
+		<button class="cbtn-9">9</button>
+		<button class="cbtn-mul">X</button>
+		<br />
+		<button class="cbtn-4">4</button>
+		<button class="cbtn-5">5</button>
+		<button class="cbtn-6">6</button>
+		<button class="cbtn-sub">-</button>
+		<br />
+		<button class="cbtn-1">1</button>
+		<button class="cbtn-2">2</button>
+		<button class="cbtn-3">3</button>
+		<button class="cbtn-add">+</button>
+		<br />
+		<button class="cbtn-clr">C</button>
+		<button class="cbtn-0">0</button>
+		<button class="cbtn-dec">.</button>
+		<button class="cbtn-eql">=</button>
+	</div>
+	<script src="08.js"></script>
+</body>
+
+</html>
